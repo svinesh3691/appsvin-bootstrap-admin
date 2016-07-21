@@ -2,7 +2,7 @@
 	$page = $_GET['page']; 
 	$pages = ['forms','tables','curd']; 
 	if (!$page) {
-		echo "No page specified! Bad Request"; exit;
+		header('location:index.php?page=forms');
 	}
 	if (!in_array($page, $pages)) {
 		echo '`'.$page.'` page does not exists in this template';
