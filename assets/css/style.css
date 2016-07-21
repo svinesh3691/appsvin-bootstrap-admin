@@ -1,0 +1,290 @@
+body {
+    overflow-x: hidden;
+    background-color: #F0F3F4;
+    font-size: 14px;
+}
+.no-padding {
+	padding: 0px !important;
+}
+/*######################################## Header - Start ##############################################*/
+	header {
+	    position: fixed;
+	    display: block;
+	    top: 0px;
+	    width: 100%;
+	    height: auto;
+	    padding: 8px 12px;
+	    background-color: #0DC9F7!important;
+	    z-index: 99;
+	    box-shadow: 0 2px 4px -3px rgba(0, 0, 0, .8);
+	}
+
+	header i {
+	    margin-top: 2px;
+	    color: #fff;
+	    cursor: pointer;
+	}
+/*######################################## Heeader - End ##############################################*/
+
+
+/*######################################## Side Menu Start ############################################*/
+		
+		/* Toggle Styles */
+		.wrapper {
+		    padding-left: 0;
+		    -webkit-transition: all 0.5s ease;
+		    -moz-transition: all 0.5s ease;
+		    -o-transition: all 0.5s ease;
+		    transition: all 0.5s ease;
+		}
+
+		.wrapper.toggled {
+		    padding-left: 250px;
+		}
+
+		.side-menu {
+
+		    z-index: 1000;
+		    position: fixed;
+		    left: 250px;
+		    width: 0;
+		    height: 100%;
+		    margin-left: -250px;
+		    overflow-y: auto;
+		    overflow-x: hidden;
+		    background: #1C1C1C;
+		    -webkit-transition: all 0.5s ease;
+		    -moz-transition: all 0.5s ease;
+		    -o-transition: all 0.5s ease;
+		    transition: all 0.5s ease;
+		}
+
+		.wrapper.toggled .side-menu {
+		    width: 250px;
+		}
+
+		.page-content {
+		    width: 100%;
+		    padding-top: 45px;
+		    position: absolute;
+		}
+
+		.wrapper.toggled .page-content {
+		    position: absolute;
+		    margin-right: -250px;
+		}
+
+
+		/* Sidebar Styles */
+		.sidebar-nav {
+		    /*position: absolute;*/
+		    /*top: 0;*/
+		    width: 250px;
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+		}
+
+		.sidebar-nav li {
+		    text-indent: 20px;
+		    line-height: 40px;
+		}
+
+		.sidebar-nav li a {
+		    display: block;
+		    text-decoration: none;
+		    color: #999999;
+		}
+
+		.sidebar-nav li a:hover {
+		    text-decoration: none;
+		    color: #fff;
+		    /*background: rgba(255,255,255,0.2);*/
+			background-color: #0DC9F7;
+		}
+
+		.sidebar-nav li > ul > li a:hover {
+		    text-decoration: none;
+		    color: #fff;
+		    /*background: rgba(255,255,255,0.2);*/
+			background-color: #252525;
+		}
+
+
+
+		.sidebar-nav li a:active,
+		.sidebar-nav li a:focus {
+		    text-decoration: none;
+		}
+
+		.sidebar-nav > .sidebar-brand {
+		    height: 65px;
+		    font-size: 18px;
+		    line-height: 60px;
+		}
+
+		.sidebar-nav > .sidebar-brand a {
+		    color: #999999;
+		}
+
+		.sidebar-nav > .sidebar-brand a:hover {
+		    color: #fff;
+		    background: none;
+		}
+
+		@media(min-width:768px) {
+		    .wrapper {
+		        padding-left: 250px;
+		    }
+
+
+		    .wrapper.toggled {
+		        padding-left: 0;
+		    }
+
+		    .side-menu {
+		        width: 250px;
+		    }
+
+		    .wrapper.toggled .side-menu {
+		        width: 0;
+		    }
+		 
+
+		    .page-content {
+		        padding: 20px;
+		        padding-top: 45px;
+		        position: relative;
+		        -webkit-transition: all 0.5s ease;
+		        -moz-transition: all 0.5s ease;
+		        -o-transition: all 0.5s ease;
+		        transition: all 0.5s ease;
+		    }
+
+		    .wrapper.toggled .page-content {
+		        position: relative;
+		        margin-right: 0;
+		    }
+
+
+		}
+
+
+		/*S Vinesh*/
+
+		.sidebar-nav>li.active>a {	
+		    color: #fff;
+		    background-color: #0DC9F7;
+		}
+
+		.sidebar-nav>li>ul>li.active>a {	
+		    color: #fff;
+		}
+
+		.sidebar-nav>li>ul {	
+			list-style-type:none;
+			padding: 0px;
+			background-color: #363737;
+		}
+
+		.logo {
+		    color: #fff;
+		    font-size: 1.36em;
+		}
+		
+		.menu-toggle {
+		    font-size: 1.63em !important;
+		}
+		
+		.logo-block {
+			width: 250px;
+		    position: relative;
+		    padding: 10px 10px;
+		    height:76px;
+			border-bottom:1px solid #0DC9F7;
+		}
+		
+		.logo-image-holder {
+			 position: absolute;
+		}
+
+		.logo-description {
+			padding: 5px 5px 5px 15px;
+		    line-height: 1;
+		    position: absolute;
+		    left: 55px;
+		}
+
+		.logo-image {
+			border-top:2px solid #0DC9F7;
+			border-bottom:2px solid #0DC9F7;
+		    width: 100%;
+		    max-width: 45px;
+		    height: auto;
+		    vertical-align: middle;
+		    border-radius: 50%
+		}
+		
+		
+		.logo-description-main {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			color: #fff;
+		}
+		.logo-description-sub {
+			font-size: .8em;
+			line-height: 1.3em;
+			color: #fff;
+		}
+
+		.menu-heading {
+		    color: #fff;
+		    padding: 12px 10px;
+		    width: 250px;
+		    font-size: 12px;
+		    line-height: 6px;
+		    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+		}
+/*######################################## Side Menu End ##############################################*/
+
+
+/*######################################## Bradcrumb - Heading Starts ##############################################*/
+	.module-header {
+		margin-bottom: 16px;
+	}
+	.module-heading {
+		font-size: 2em;
+	}
+	.breadcrumb-route {
+		text-align: right;
+		line-height: 2.5em
+	}
+/*######################################## Bradcrumb - Heading Ends ##############################################*/
+
+
+/*######################################## Box - Starts ##############################################*/
+	.box {
+		background-color: #fff;
+	    border: none;
+	    border-radius: 4px;
+	    position: relative;
+	    margin-bottom: 24px;
+	    box-shadow: 2px 5px 7px 1px rgba(0,0,0,.25);
+	}
+	.box-header {
+	    border-bottom: 1px solid rgba(0,0,0,.12);
+	    padding: 10px 15px;
+	    font-size: 1.3em;
+	}
+	.box-body {
+	    border-bottom: 1px solid rgba(0,0,0,.12);
+	    padding: 10px 15px;
+	    font-size: 1em;
+	}
+	.box-footer {
+	    border-top: 1px solid rgba(0,0,0,.12);
+	    padding: 10px 15px;
+	    font-size: 1.3em;
+	}
+/*######################################## Box - Ends ##############################################*/
+	
