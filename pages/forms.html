@@ -1,0 +1,308 @@
+
+<html>
+	<head>
+		<title>Appsvin Admin Panel</title>
+
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="S Vinesh">
+		
+		<!-- Css -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+		<link href="../assets/css/style.css" rel="stylesheet" >
+
+		<script src="../assets/js/jquery.js"></script>
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Start header -->
+				<header>
+					<div class="row">
+						<div class="col-md-1 col-xs-2">
+							<i class="fa fa-bars menu-toggle"></i>
+						</div>
+						
+						
+						<div class="col-md-11 col-xs-12">
+							
+						</div>
+					</div>
+				</header>
+			<!-- End header -->
+
+			<!-- Start side menu -->
+				<div class="side-menu">
+					<!-- Start logo block -->
+						<div class="logo-block">
+							<div class="logo-image-holder"> 
+								<img class="logo-image" src="../assets/img/profile_pic.png">
+							</div>
+							<div class="logo-description">
+								<div class="logo-description-main">S Vinesh</div>
+								<div class="logo-description-sub">Javascript & PHP Developer</div>
+							</div>
+						</div>	 
+					<!-- End logo block -->
+
+					<!-- Start menu -->
+						<div class="menu-heading">Navigation Menu</div>
+			            <ul class="sidebar-nav" id="menu">
+							
+			                <li>
+			                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> Dashboard</a>
+			                       <ul >
+			                        	<li><a href="#">Dashboard 1</a></li>
+			                        	<li><a href="#">Dashboard 2</a></li>
+			                    	</ul>
+			                </li>
+			                <li class="active">
+			                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-edit fa-stack-1x "></i></span> Forms </a>
+			                       	<ul >
+				                        <li class="active"><a href="index.php?page=forms"><span class="fa-stack fa-lg pull-left"><i class="fa fa-circle-o fa-stack-1x "></i></span>General</a></li>
+				                        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-circle-o fa-stack-1x "></i></span>Advanced</a></li>
+				                        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-circle-o fa-stack-1x "></i></span>Editors</a></li>
+			                    	</ul>
+			                </li>
+			                <li>
+			                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-folder fa-stack-1x "></i></span> Pages </a>
+			                    <ul>
+			                        <li><a href="#" ><span class="fa-stack fa-lg pull-left"><i class="fa fa-circle-o fa-stack-1x "></i></span>Login</a></li>
+			                        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-circle-o fa-stack-1x "></i></span>Register</a></li>
+			                        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-circle-o fa-stack-1x "></i></span>Locked</a></li>
+			                        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-circle-o fa-stack-1x "></i></span>Contact</a></li>
+			                        <li><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-circle-o fa-stack-1x "></i></span>Change Password</a></li>
+			 
+			                    </ul>
+			                </li>
+			                <li class="">
+			                    <a href="index.php?page=tables"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-table fa-stack-1x "></i></span>Tables</a>
+			                </li>
+			                <li  class="">
+			                    <a href="index.php?page=curd"><span class="fa-stack fa-lg pull-left"><i class="fa fa-cloud-download fa-stack-1x "></i></span>CURD Module</a>
+			                </li>
+			                <li>
+			                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x "></i></span>About</a>
+			                </li>
+			                <li>
+			                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>Services</a>
+			                </li>
+			                <li>
+			                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-server fa-stack-1x "></i></span>Contact</a>
+			                </li>
+			            </ul>
+					<!-- End menu -->
+				</div>
+			<!-- End side menu --><!-- Start page Content -->
+	<div class="page-content">
+			<div class="container-fluid">
+                <div class="row module-header">
+                    <div class="col-md-12 module-heading">
+                        Forms	
+                    </div>
+                    <div class="col-md-12 module-breadcrumb">
+                        Dashboard > Modules > Forms
+                    </div>
+                </div>
+
+                <div class="row">
+
+                	<div class="col-md-12">
+	                	<div class="box">
+	                		<div class="box-header">
+	                			Bootstrap Multi Element Form
+	                		</div>
+	                		<div class="box-body add-form">
+	                			<form class="form-horizontal" role="form">
+								  	<div class="form-group">
+									    <label class="control-label col-sm-3" for="name">Name:</label>
+									    <div class="col-sm-8">
+									      <input type="text" class="form-control" id="name" placeholder="Enter name">
+									    </div>
+								  	</div>
+								  	<div class="form-group">
+									    <label class="control-label col-sm-3" for="age">Sex:</label>
+									    <div class="col-sm-8">
+									      	<label class="radio-inline">
+										      <input type="radio" name="optradio">Male
+										    </label>
+										    <label class="radio-inline">
+										      <input type="radio" name="optradio">Female
+										    </label>
+									    </div>
+								  	</div>
+								  	<div class="form-group">
+									    <label class="control-label col-sm-3" for="age">Date of Birth:</label>
+									    <div class="col-sm-8">
+									      <input type="date" class="form-control" id="age" placeholder="Enter age">
+									    </div>
+								  	</div>
+								  	<div class="form-group">
+									    <label class="control-label col-sm-3" for="age">Age:</label>
+									    <div class="col-sm-8">
+									      <input type="number" class="form-control" id="age" placeholder="Enter age">
+									    </div>
+								  	</div>
+								  	<div class="form-group">
+									    <label class="control-label col-sm-3" for="age">Hobbies:</label>
+									    <div class="col-sm-8">
+											<div class="checkbox">
+											  <label><input type="checkbox" value="">Singing</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" value="">Reading</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" value="">Writing</label>
+											</div>
+											<div class="checkbox">
+											  <label><input type="checkbox" value="">Painting</label>
+											</div>
+
+									    </div>
+								  	</div>
+								  	<div class="form-group">
+									    <label class="control-label col-sm-3" for="mobile">Martial status:</label>
+									    <div class="col-sm-8">
+									    	<select class="form-control" id="sel1">
+											    <option>Single</option>
+											    <option>Married</option>
+											    <option>Divorced</option>
+											    <option>Widow</option>
+											  </select>
+									    </div>
+								  	</div>
+								  	<div class="form-group">
+									    <label class="control-label col-sm-3" for="mobile">Mobile:</label>
+									    <div class="col-sm-8">
+									      <input type="text" class="form-control" id="mobile" placeholder="Enter mobile">
+									    </div>
+								  	</div>
+					
+									<div class="form-group"> 
+									    <div class="col-sm-offset-3 col-sm-10">
+									      <button type="submit" class="btn btn-default">Submit</button>
+									    </div>
+									</div>
+								</form>
+	                		</div>
+	                	</div>
+	                </div>
+
+                	<div class="col-md-6">
+                		<div class="box">
+	                		<div class="box-header">
+	                			Bootstrap Vertical Form
+	                		</div>
+	                		<div class="box-body">
+	                			<form role="form">
+									<div class="form-group">
+									    <label for="email">Email address:</label>
+									    <input type="email" class="form-control" id="email">
+									</div>
+									<div class="form-group">
+									    <label for="pwd">Password:</label>
+									    <input type="password" class="form-control" id="pwd">
+									</div>
+									<div class="checkbox">
+									    <label><input type="checkbox"> Remember me</label>
+									</div>
+									<button type="submit" class="btn btn-default">Submit</button>
+								</form>
+	                		</div>
+	                	</div>
+                	</div>
+
+                	<div class="col-md-6">
+	                	<div class="box">
+	                		<div class="box-header">
+	                			Bootstrap Horizontal Form
+	                		</div>
+	                		<div class="box-body">
+	                			<form class="form-horizontal" role="form">
+
+								  	<div class="form-group">
+									    <label class="control-label col-sm-2" for="email">Email:</label>
+									    <div class="col-sm-10">
+									      <input type="email" class="form-control" id="email" placeholder="Enter email">
+									    </div>
+								  	</div>
+									<div class="form-group">
+									    <label class="control-label col-sm-2" for="pwd">Password:</label>
+									    <div class="col-sm-10"> 
+									      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+									    </div>
+									</div>
+									<div class="form-group"> 
+									    <div class="col-sm-offset-2 col-sm-10">
+									      <div class="checkbox">
+									        <label><input type="checkbox"> Remember me</label>
+									      </div>
+									    </div>
+									    
+									</div>
+									<div class="form-group"> 
+									    <div class="col-sm-offset-2 col-sm-10">
+									      <button type="submit" class="btn btn-default">Submit</button>
+									    </div>
+									</div>
+								</form>
+	                		</div>
+	                	</div>
+                	</div>
+
+                	
+
+                </div>
+
+            </div>
+	</div>
+<!-- End page Content -->
+			<!-- Start footer -->
+				<footer>
+				</footer>
+			<!-- End footer -->
+		</div>
+
+
+		<!-- Scripts -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+
+			$(".menu-toggle").click(function(e) {
+		        e.preventDefault();
+		        $(".wrapper").toggleClass("toggled");
+		    });
+		 
+		    function initMenu() {
+				    $('#menu ul').hide();
+				    $('#menu ul').children('.active').parent().show();
+				      //$('#menu ul:first').show();
+				    $('#menu>li>a').click(function() {
+				    	  $('.active').removeClass('active');
+				    	  $(this).parent().addClass('active');
+				          var checkElement = $(this).next();
+				          if((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+				            return false;
+				            }
+				          if((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+				            $('#menu ul:visible').slideUp('normal');
+				            checkElement.slideDown('normal');
+				            return false;
+				            }
+				    });
+		      }
+		    $(document).ready(function() {initMenu();});
+
+		</script>
+	</body>
+</html>
